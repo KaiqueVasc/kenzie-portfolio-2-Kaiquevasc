@@ -44,29 +44,28 @@ export const Home = (): JSX.Element => {
                 width={"48px"}
                 height={"48px"}
               />
-              <Text color="grey4">Hello, my name is {userData.nameUser}</Text>
+              <Text color="grey4">Olá, meu nome é {userData.nameUser}</Text>
             </Flex>
             <Text as="h1" type="heading1" color="grey5">
-            I{" "}
+            {" "}
               <Text as="span" type="heading1" color="brand1">
-                love
+                Apaixonado
               </Text>{" "}
-              creating and{" "}
+              pela criação e desenvolvimento{" "}
               <Text as="span" type="heading1" color="brand1">
-                developing
+                de projetos
               </Text>{" "}
-              projects
+                fullstack
             </Text>
             <Text type="body1" color="grey2">
-              Discover here in this environment, created especially for you, all
-              my projects and technologies
+              Descubra aqui alguns de meus projetos pessoais 
             </Text>
             <HeaderButtonsArea>
               <Button as="a" type="primary" href="#projects">
-                See Projects
+                Veja meus projetos
               </Button>
               <Button as="a" type="outline" target="_blank" href={portfolioUrl}>
-                See my portfolio source code
+                Veja meus repositórios
               </Button>
               <Button
                 color="grey5"
@@ -92,12 +91,12 @@ export const Home = (): JSX.Element => {
           <ProjectAreaWrapperColumns>
             <ProjectsAreaSocialMediaMessage>
               <Text as="h2" type="heading4" color="grey4">
-                My projects
+                Meus projetos
               </Text>
               <Text as="p" type="body1" color="grey2">
-                Some of my{" "}
+                Alguns dos meus{" "}
                 <Text as="span" color="brand5">
-                  side projects
+                  projetos
                 </Text>
               </Text>
             </ProjectsAreaSocialMediaMessage>
