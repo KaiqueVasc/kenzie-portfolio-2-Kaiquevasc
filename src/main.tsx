@@ -6,12 +6,16 @@ import { NavBar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { AboutMePage } from "./pages/aboutme";
 import { ProjectPage } from "./pages/projects";
+import { App } from "./App";
+import { BrowserRouter } from "react-router-dom";
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
     <GlobalStyle>
       <NavBar />
-      <Home></Home>
+      <BrowserRouter>
+      <App/>
+      </BrowserRouter>
       <Footer />
     </GlobalStyle>
   </React.StrictMode>

@@ -14,14 +14,18 @@ import { FaBars } from "react-icons/fa";
 import { IoClose } from "react-icons/io5";
 import { Button } from "@/styles/Buttons";
 import { Container, Flex } from "@/styles/Global";
+import { useNavigate } from "react-router-dom";
 
 export interface MenuButtonOpen {
   open: Boolean;
   setOpen: (value: Boolean) => void;
 }
 
+
+
 export const NavBar = (): JSX.Element => {
 
+  
   const isWide = useMedia({ maxWidth: "991px" });
 
   document.title = userData.nameUser;
@@ -58,12 +62,20 @@ export const NavBar = (): JSX.Element => {
 };
 
 export const NavLinks = (): JSX.Element => {
+
+  function navigatePro () {
+    console.log("oi")
+    const navigate = useNavigate()
+  
+    navigate("/projects")
+  }
+
   return (
     <NavbarLinks>
       <Button type="btLink" as="a" color="grey4" href={`#home`}>
         Home
       </Button>
-      <Button type="btLink" as="a" color="grey4" href={`#projects`}>
+      <Button onClick={navigatePro} type="btLink" as="a" color="grey4" >
         Projetos
       </Button>
       <Button type="btLink" as="a" color="grey4" href={`#contact`}>

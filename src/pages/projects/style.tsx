@@ -29,7 +29,10 @@ export const TitleContainer = styled("h2", {
 })
 
 export const ListContainer = styled("ul", {
+    display: "flex",
+    flexDirection: "row",
+    justifyContent: "space-around",
     height: "350px",
     width: "98%",
-    backgroundColor: "grey",
+    backgroundColor: "$gray1",
 })
